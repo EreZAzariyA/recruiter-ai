@@ -21,6 +21,7 @@ export default function Chat() {
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isStreaming, setIsStreaming] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -73,10 +74,16 @@ export default function Chat() {
       };
 
       setMessages(prev => [...prev, assistantMessage]);
-
+      setIsStreaming(true);
+      
       while (true) {
+        setIsStreaming(true);
+
         const { value, done } = await reader.read();
-        if (done) break;
+        if (done) {
+          setIsStreaming(false);
+          break;
+        };
 
         const chunk = decoder.decode(value, { stream: true });
 
@@ -152,7 +159,7 @@ export default function Chat() {
             </div>
           </div>
         ))}
-        {isLoading && (
+        {isLoading && !isStreaming && (
           <div className="flex gap-3">
             <div className="w-10 h-10 rounded-full bg-gray-600 text-white flex items-center justify-center">
               <Bot size={20} />
