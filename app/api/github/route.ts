@@ -1,4 +1,3 @@
-// app/api/github/route.ts
 import { NextResponse } from 'next/server';
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;

@@ -1,4 +1,3 @@
-// app/api/parse-cv/route.ts - גרסה עם הנתונים מובנים בקוד
 import { NextResponse } from 'next/server';
 
 // הנתונים שלך ישירות בקוד
