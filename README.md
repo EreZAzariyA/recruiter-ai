@@ -2,6 +2,8 @@
 
 An AI-powered recruiting assistant that helps HR professionals interact with developer profiles through natural conversation.
 
+Check out the [Live Demo](https://recruiter-ai-by-erez.vercel.app/)!
+
 ## Overview
 
 Recruiter AI serves as a digital representative for developers, allowing recruiters to:
