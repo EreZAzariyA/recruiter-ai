@@ -1,40 +1,11 @@
 import { NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import cvData from '@/data/cv-data.json';
+import githubData from '@/data/github-data.json';
 
 const anthropic = new Anthropic({
   apiKey: process.env.CLAUDE_API_KEY!,
 });
-
-// Cache for GitHub data to avoid repeated API calls
-let githubDataCache: any = null;
-let cacheTimestamp: number = 0;
-const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
-
-
-async function getGitHubData() {
-  const now = Date.now();
-
-  if (githubDataCache && (now - cacheTimestamp) < CACHE_DURATION) {
-    return githubDataCache;
-  }
-
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/api/github`);
-    const data = await response.json();
-
-    if (data.success) {
-      githubDataCache = data.data;
-      cacheTimestamp = now;
-      return data.data;
-    }
-  } catch (error) {
-    console.error('Failed to fetch GitHub data:', error);
-  }
-
-  return null;
-}
-
 
 function createSystemPrompt(githubData: any, cvData: any) {
   return `אתה נציג AI של ארז, מפתח תוכנה מנוסה. אתה עונה על שאלות של מגייסות לחברות הייטק.
@@ -45,6 +16,8 @@ ${cvData ? `
 - אימייל: ${cvData.personalInfo?.email || 'לא צוין'}
 - טלפון: ${cvData.personalInfo?.phone || 'לא צוין'}
 - LinkedIn: ${cvData.personalInfo?.linkedin || 'לא צוין'}
+- גיל: ${cvData.personalInfo?.age || 'לא צוין'}
+- מיקום: ${cvData.personalInfo?.location || 'לא צוין'}
 
 ניסיון תעסוקתי:
 ${cvData.experience?.map((exp: any) => `
@@ -93,8 +66,6 @@ ${githubData ? githubData.map((repo: any) => `
 export async function POST(request: Request) {
   try {
     const { messages } = await request.json();
-
-    const githubData = await getGitHubData();
 
     const systemPrompt = createSystemPrompt(githubData, cvData);
     
