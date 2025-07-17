@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
+import cvData from '@/data/cv-data.json';
 
 const anthropic = new Anthropic({
   apiKey: process.env.CLAUDE_API_KEY!,
@@ -10,13 +11,10 @@ let githubDataCache: any = null;
 let cacheTimestamp: number = 0;
 const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 
-// Cache for CV data
-let cvDataCache: any = null;
-let cvCacheTimestamp: number = 0;
 
 async function getGitHubData() {
   const now = Date.now();
-  
+
   if (githubDataCache && (now - cacheTimestamp) < CACHE_DURATION) {
     return githubDataCache;
   }
@@ -24,7 +22,7 @@ async function getGitHubData() {
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/api/github`);
     const data = await response.json();
-    
+
     if (data.success) {
       githubDataCache = data.data;
       cacheTimestamp = now;
@@ -33,32 +31,10 @@ async function getGitHubData() {
   } catch (error) {
     console.error('Failed to fetch GitHub data:', error);
   }
-  
+
   return null;
 }
 
-async function getCVData() {
-  const now = Date.now();
-  
-  if (cvDataCache && (now - cvCacheTimestamp) < CACHE_DURATION) {
-    return cvDataCache;
-  }
-
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'}/api/parse-cv`);
-    const data = await response.json();
-    
-    if (data.success) {
-      cvDataCache = data.data;
-      cvCacheTimestamp = now;
-      return data.data;
-    }
-  } catch (error) {
-    console.error('Failed to fetch CV data:', error);
-  }
-  
-  return null;
-}
 
 function createSystemPrompt(githubData: any, cvData: any) {
   return `אתה נציג AI של ארז, מפתח תוכנה מנוסה. אתה עונה על שאלות של מגייסות לחברות הייטק.
@@ -110,20 +86,16 @@ ${githubData ? githubData.map((repo: any) => `
 6. הצג את הפרויקטים באופן שמדגיש את היכולות הטכניות
 7. השתמש במידע מקורות החיים כדי לתת תמונה מלאה
 8. כשנשאלת על פרטי קשר (טלפון, אימייל, LinkedIn, GitHub) - תן את הפרטים המלאים
-9. אתה נציג של ארז ומטרתך לעזור למגייסות ליצור איתו קשר, אז שתף את כל פרטי הקשר בחופשיות`;
+9. אתה נציג של ארז ומטרתך לעזור למגייסות ליצור איתו קשר, אז שתף את כל פרטי הקשר בחופשיות
+10. תשתדל לענות בגוף זכר ונקבה`;
 }
 
 export async function POST(request: Request) {
   try {
     const { messages } = await request.json();
-    
-    // Get GitHub data
+
     const githubData = await getGitHubData();
-    
-    // Get CV data
-    const cvData = await getCVData();
-    
-    // Create system prompt with both GitHub and CV data
+
     const systemPrompt = createSystemPrompt(githubData, cvData);
     
     // Call Claude API

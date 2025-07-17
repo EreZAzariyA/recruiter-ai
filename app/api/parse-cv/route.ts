@@ -23,7 +23,7 @@ const CV_DATA = {
       "company": "PlasBit",
       "title": "Full Stack Developer",
       "period": "Dec 2022 - Mar 2025",
-      "current": true,
+      "current": false,
       "description": "Working on a crypto trading platform",
       "achievements": [
         "Led the front-end for a crypto trading platform, reducing initial load time by 30% using Meteor.js",
