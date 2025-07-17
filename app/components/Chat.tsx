@@ -60,23 +60,42 @@ export default function Chat() {
         }),
       });
 
-      const data = await response.json();
+      if (!response.body) throw new Error('No response body');
 
-      if (data.success) {
-        const assistantMessage: Message = {
-          id: (Date.now() + 1).toString(),
-          role: 'assistant',
-          content: data.message,
-          timestamp: new Date(),
-        };
-        setMessages(prev => [...prev, assistantMessage]);
-      } else {
-        throw new Error(data.error || 'Failed to get response');
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder('utf-8');
+
+      const assistantMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: '',
+        timestamp: new Date(),
+      };
+
+      setMessages(prev => [...prev, assistantMessage]);
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value, { stream: true });
+
+        setMessages(prevMessages => {
+          const updated = [...prevMessages];
+          const lastMsgIndex = updated.findIndex(msg => msg.id === assistantMessage.id);
+          if (lastMsgIndex !== -1) {
+            updated[lastMsgIndex] = {
+              ...updated[lastMsgIndex],
+              content: updated[lastMsgIndex].content + chunk,
+            };
+          }
+          return updated;
+        });
       }
     } catch (error) {
       console.error('Chat error:', error);
       const errorMessage: Message = {
-        id: (Date.now() + 1).toString(),
+        id: (Date.now() + 2).toString(),
         role: 'assistant',
         content: 'מצטער, נתקלתי בבעיה. אנא נסה שוב.',
         timestamp: new Date(),

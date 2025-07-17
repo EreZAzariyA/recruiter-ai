@@ -68,21 +68,32 @@ export async function POST(request: Request) {
     const { messages } = await request.json();
 
     const systemPrompt = createSystemPrompt(githubData, cvData);
-    
-    // Call Claude API
-    const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
-      max_tokens: 1024,
-      system: systemPrompt,
-      messages: messages.map((msg: any) => ({
-        role: msg.role === 'user' ? 'user' : 'assistant',
-        content: msg.content,
-      })),
-    });
 
-    return NextResponse.json({
-      success: true,
-      message: response.content[0].type === 'text' ? response.content[0].text : '',
+    const stream = anthropic.messages.stream({
+      model: "claude-3-5-sonnet-20241022",
+      messages,
+      system: systemPrompt,
+      max_tokens: 1024,
+    });
+    
+    const encoder = new TextEncoder();
+    
+    const readableStream = new ReadableStream({
+      async start(controller) {
+        for await (const event of stream) {
+          if (event.type === "content_block_delta" && event.delta.type === "text_delta") {
+            controller.enqueue(encoder.encode(event.delta.text));
+          }
+        }
+        controller.close();
+      }
+    });
+    
+    return new Response(readableStream, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Cache-Control': 'no-cache',
+      },
     });
   } catch (error) {
     console.error('Claude API error:', error);
