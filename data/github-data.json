@@ -1,0 +1,151 @@
+[
+  {
+    "name": "recruiter-ai",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/recruiter-ai",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "topics": [],
+    "readme": "# Recruiter AI 🤖\n\nAn AI-powered recruiting assistant that helps HR professionals interact with developer profiles through natural conversation.\n\n## Overview\n\nRecruiter AI serves as a digital representative for developers, allowing recruiters to:\n- Ask questions about technical skills and experience\n- Get detailed information about GitHub projects\n- Learn about work history and technical capabilities\n- Obtain contact information easily\n\n## Tech Stack\n\n- **Frontend**: Next.js 13, React\n- **Styling**: Tailwind CSS\n- **AI Integration**: Claude AI\n- **State Management**: React Context\n- **Type Safety**: TypeScript\n- **Deployment**: Vercel\n\n## Features\n\n- 💬 Natural language conversations\n- 🔍 Deep understanding of developer profiles\n- 📊 Dynamic response generation\n- 🎯 Recruitment-focused interactions\n- 📱 Responsive design\n\n## Getting Started\n\n1. Clone the repository:\n```bash\ngit clone https://github.com/EreZAzariyA/recruiter-ai.git\n```\n\n2. Install dependencies:\n```bash\nnpm install\n```\n\n3. Set up environment variables:\n```bash\ncp .env.example .env.local\n```\n\n4. Run the development server:\n```bash\nnpm run dev\n```\n\n## Contributing\n\nContributions are welcome! Please feel free to submit a Pull Request.\n\n\n## Contact\n\nIf you have any questions or suggestions, feel free to reach out:\n- Email: erezazariya@gmail.com\n- LinkedIn: https://linkedin.com/in/erezazariya",
+    "updated_at": "2025-07-17T12:44:00Z"
+  },
+  {
+    "name": "crypto-wallet",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/crypto-wallet",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": null,
+    "updated_at": "2025-06-12T05:43:35Z"
+  },
+  {
+    "name": "Numbers-Server",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Numbers-Server",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": null,
+    "updated_at": "2025-03-30T16:15:41Z"
+  },
+  {
+    "name": "israeli-bank-scrapers-for-ea-servers",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/israeli-bank-scrapers-for-ea-servers",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "Shell"
+    ],
+    "topics": [],
+    "readme": "# Israeli Bank Scrapers - Get closer to your own data!\n\n<img src=\"./logo.png\" width=\"100\" height=\"100\" alt=\"Logo\" align=\"left\" />\n\n[![NPM](https://nodei.co/npm/israeli-bank-scrapers.png)](https://nodei.co/npm/israeli-bank-scrapers/)\n\n[![npm version](https://badge.fury.io/js/israeli-bank-scrapers.svg)](https://badge.fury.io/js/israeli-bank-scrapers)\n[![dependencies Status](https://david-dm.org/eshaham/israeli-bank-scrapers/status.svg)](https://david-dm.org/eshaham/israeli-bank-scrapers)\n[![devDependencies Status](https://david-dm.org/eshaham/israeli-bank-scrapers/dev-status.svg)](https://david-dm.org/eshaham/israeli-bank-scrapers?type=dev)\n\n> Important!\n> \n> The scrapers are set to use timezone `Asia/Jerusalem` to avoid conflicts in case you're running the scrapers outside Israel.\n \n# What's here?\nWhat you can find here is scrapers for all major Israeli banks and credit card companies. That's the plan at least.\nCurrently only the following banks are supported:\n- Bank Hapoalim (thanks [@sebikaplun](https://github.com/sebikaplun))\n- Leumi Bank (thanks [@esakal](https://github.com/esakal))\n- Discount Bank\n- Mercantile Bank (thanks [@ezzatq](https://github.com/ezzatq) and [@kfirarad](https://github.com/kfirarad)))\n- Mizrahi Bank (thanks [@baruchiro](https://github.com/baruchiro))\n- Otsar Hahayal Bank (thanks [@matanelgabsi](https://github.com/matanelgabsi))\n- Visa Cal (thanks [@erikash](https://github.com/erikash), [@esakal](https://github.com/esakal) and [@nirgin](https://github.com/nirgin))\n- Max (Formerly Leumi Card)\n- Isracard\n- Amex (thanks [@erezd](https://github.com/erezd))\n- Union Bank (Thanks to Intuit FDP OpenSource Team [@dratler](https://github.com/dratler),[@kalinoy](https://github.com/kalinoy),[@shanigad](https://github.com/shanigad),[@dudiventura](https://github.com/dudiventura) and [@NoamGoren](https://github.com/NoamGoren))\n- Beinleumi (Thanks to [@dudiventura](https://github.com/dudiventura) from the Intuit FDP OpenSource Team)\n- Massad\n- Yahav (Thanks to [@gczobel](https://github.com/gczobel))\n- Beyhad Bishvilha - [ביחד בשבילך](https://www.hist.org.il/) (thanks [@esakal](https://github.com/esakal))\n- OneZero (Experimental) (thanks [@orzarchi](https://github.com/orzarchi))\n- Behatsdaa - [בהצדעה](behatsdaa.org.il) (thanks [@daniel-hauser](https://github.com/daniel-hauser))\n\n# Prerequisites\nTo use this you will need to have [Node.js](https://nodejs.org) >= 16.x installed.\n\n# Getting started\nTo use these scrapers you'll need to install the package from npm:\n```sh\nnpm install israeli-bank-scrapers --save\n```\nThen you can simply import and use it in your node module:\n\n```node\nimport { CompanyTypes, createScraper } from 'israeli-bank-scrapers';\n\n(async function() {\n  try {\n    // read documentation below for available options\n    const options = {\n      companyId: CompanyTypes.leumi, \n      startDate: new Date('2020-05-01'),\n      combineInstallments: false,\n      showBrowser: true \n    };\n\n    // read documentation below for information about credentials\n    const credentials = {\n      username: 'vr29485',\n      password: 'sometingsomething'\n    };\n\n    const scraper = createScraper(options);\n    const scrapeResult = await scraper.scrape(credentials);\n\n    if (scrapeResult.success) {\n      scrapeResult.accounts.forEach((account) => {\n        console.log(`found ${account.txns.length} transactions for account number ${account.accountNumber}`);\n      });\n    }\n    else {\n      throw new Error(scrapeResult.errorType);\n    }\n  } catch(e) {\n    console.error(`scraping failed for the following reason: ${e.message}`);\n  }\n})();\n```\n\nCheck the options declaration [here](./src/scrapers/interface.ts#L29) for available options.\n\nRegarding credentials, you should provide the relevant credentials for the chosen company. See [this file](./src/definitions.ts) with list of credentials per company.\n\nThe structure of the result object is as follows:\n\n```node\n{\n  success: boolean,\n  accounts: [{\n    accountNumber: string,\n    balance?: number, // Account balance. Not implemented for all accounts.\n    txns: [{\n      type: string, // can be either 'normal' or 'installments'\n      identifier: int, // only if exists\n      date: string, // ISO date string\n      processedDate: string, // ISO date string\n      originalAmount: double,\n      originalCurrency: string,\n      chargedAmount: double,\n      description: string,\n      memo: string, // can be null or empty\n      installments: { // only if exists\n        number: int, // the current installment number\n        total: int, // the total number of installments\n      },\n      status: string //can either be 'completed' or 'pending'\n    }],\n  }],\n  errorType: \"INVALID_PASSWORD\"|\"CHANGE_PASSWORD\"|\"ACCOUNT_BLOCKED\"|\"UNKNOWN_ERROR\"|\"TIMEOUT\"|\"GENERIC\", // only on success=false\n  errorMessage: string, // only on success=false\n}\n```\n\nYou can also use the `SCRAPERS` list to get scraper metadata:\n```node\nimport { SCRAPERS } from 'israeli-bank-scrapers';\n```\n\nThe return value is a list of scraper metadata:\n```node\n{\n  <companyId>: {\n    name: string, // the name of the scraper\n    loginFields: [ // a list of login field required by this scraper\n      '<some field>' // the name of the field\n    ]\n  }\n}\n```\n\n## Advanced options\n\n### ExternalBrowserOptions\n\nThis option allows you to provide an externally created browser instance. You can get a browser directly from puppeteer via `puppeteer.launch()`.  \nNote that for backwards compatibility, the browser will be closed by the library after the scraper finishes unless `skipCloseBrowser` is set to true.\n\nExample:\n\n```typescript\nimport puppeteer from 'puppeteer';\nimport { CompanyTypes, createScraper } from 'israeli-bank-scrapers';\n\nconst browser = await puppeteer.launch();\nconst options = {\n  companyId: CompanyTypes.leumi,\n  startDate: new Date('2020-05-01'),\n  browser,\n  skipCloseBrowser: true, // Or false [default] if you want it to auto-close\n};\nconst scraper = createScraper(options);\nconst scrapeResult = await scraper.scrape({ username: 'vr29485', password: 'sometingsomething' });\nawait browser.close(); // Or not if `skipCloseBrowser` is false\n```\n\n### ExternalBrowserContextOptions\n\nThis option allows you to provide a [browser context](https://pptr.dev/api/puppeteer.browsercontext). This is useful if you don't want to share cookies with other scrapers (i.e. multiple parallel runs of the same scraper with different users) without creating a new browser for each scraper.\n\nExample:\n\n```typescript\nimport puppeteer from 'puppeteer';\nimport { CompanyTypes, createScraper } from 'israeli-bank-scrapers';\n\nconst browser = await puppeteer.launch();\nconst browserContext = await browser.createBrowserContext();\nconst options = {\n  companyId: CompanyTypes.leumi,\n  startDate: new Date('2020-05-01'),\n  browserContext\n};\nconst scraper = createScraper(options);\nconst scrapeResult = await scraper.scrape({ username: 'vr29485', password: 'sometingsomething' });\nawait browser.close();\n```\n\n## Two-Factor Authentication Scrapers\n\nSome companies require two-factor authentication, and as such the scraper cannot be fully automated. When using the relevant scrapers, you have two options:\n1. Provide an async callback that knows how to retrieve real time secrets like OTP codes.\n2. When supported by the scraper - provide a \"long term token\". These are usually available if the financial provider only requires Two-Factor authentication periodically, and not on every login. You can retrieve your long term token from the relevant credit/banking app using reverse engineering and a MITM proxy, or use helper functions that are provided by some Two-Factor Auth scrapers (e.g. OneZero).\n\n\n```node\nimport { CompanyTypes, createScraper } from 'israeli-bank-scrapers';\nimport { prompt } from 'enquirer';\n\n// Option 1 - Provide a callback\n\nconst result = await scraper.login({\n email: relevantAccount.credentials.email,\n password: relevantAccount.credentials.password,\n phoneNumber,\n otpCodeRetriever: async () => {\n  let otpCode;\n  while (!otpCode) {\n   otpCode = await questions('OTP Code?');\n  }\n\n  return otpCode[0];\n }\n});\n\n// Option 2 - Retrieve a long term otp token (OneZero)\nawait scraper.triggerTwoFactorAuth(phoneNumber);\n\n// OTP is sent, retrieve it somehow\nconst otpCode='...';\n\nconst result = scraper.getLongTermTwoFactorToken(otpCode);\n/*\nresult = {\n  success: true;\n  longTermTwoFactorAuthToken: 'eyJraWQiOiJiNzU3OGM5Yy0wM2YyLTRkMzktYjBm...';\n}\n */\n```\n\n# Getting deployed version of latest changes in master\nThis library is deployed automatically to NPM with any change merged into the master branch. \n\n# `Israeli-bank-scrapers-core` library\n\n> TL;DR this is the same library as the default library. The only difference is that it is using `puppeteer-core` instead of `puppeteer` which is useful if you are using frameworks like Electron to pack your application. \n>\n> In most cases you will probably want to use the default library (read [Getting Started](#getting-started) section).\n\nIsraeli bank scrapers library is published  twice:\n 1. [israeli-bank-scrapers](https://www.npmjs.com/package/israeli-bank-scrapers) - the default variation, great for common usage as node dependency in server application or cli.\n 2. [israeli-bank-scrapers-core](https://www.npmjs.com/package/israeli-bank-scrapers-core) - extremely useful for applications that bundle `node_modules` like Electron applications. \n \n ## Differences between default and core variations\n  \n The default variation [israeli-bank-scrapers](https://www.npmjs.com/package/israeli-bank-scrapers) is using [puppeteer](https://www.npmjs.com/package/puppeteer) which handles the installation of local chroumium on its' own. This behavior is very handy since it takes care on all the hard work figuring which chromium to download and manage the actual download process.  As a side effect it increases node_modules by several hundred megabytes. \n \n The core variation [israeli-bank-scrapers-core](https://www.npmjs.com/package/israeli-bank-scrapers-core) is using [puppeteer-core](https://www.npmjs.com/package/puppeteer-core) which is exactly the same library as `puppeteer` except that it doesn't download chromium when installed by npm. It is up to you to make sure the specific version of chromium is installed locally and provide a path to that version. It is useful in Electron applications since it doesn't bloat the size of the application and you can provide a much friendlier experience like loading the application and download it later when needed. \n \n To install `israeli-bank-scrapers-core`:\n```sh\nnpm install israeli-bank-scrapers-core --save\n```\n\n## Getting chromium version used by puppeteer-core\nWhen using the `israeli-bank-scrapers-core` it is up to you to make sure the relevant chromium version exists. You must:\n1. query for the specific chromium revision required by the `puppeteer-core` library being used.\n2. make sure that you have local version of that revision.\n3. provide an absolute path to `israeli-bank-scrapers-core` scrapers.\n\nPlease read the following to learn more about the process: \n1. To get the required chromium revision use the following code:\n```\nimport { getPuppeteerConfig } from 'israeli-bank-scrapers-core';\n\nconst chromiumVersion = getPuppeteerConfig().chromiumRevision;\n```\n\n2. Once you have the chromium revision, you can either download it manually or use other liraries like [download-chromium](https://www.npmjs.com/package/download-chromium) to fetch that version. The mentioned library is very handy as it caches the download and provide useful helpers like download progress information.\n \n 3. provide the path to chromium to the library using the option key `executablePath`. \n\n# Specific definitions per scraper\n\n## Bank Hapoalim scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  userCode: <user identification code>,\n  password: <user password>\n};\n```\nThis scraper supports fetching transaction from up to one year.\n\n## Bank Leumi scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  username: <user name>,\n  password: <user password>\n};\n```\nThis scraper supports fetching transaction from up to one year.\n\n## Discount scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  id: <user identification number>,\n  password: <user password>,\n  num: <user identificaiton code>\n};\n```\nThis scraper supports fetching transaction from up to one year (minus 1 day).\n\n## Mercantile scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  id: <user identification number>,\n  password: <user password>,\n  num: <user identificaiton code>\n};\n```\nThis scraper supports fetching transaction from up to one year (minus 1 day).\n\n\n### Known Limitations\n- Missing memo field\n\n## Mizrahi scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  username: <user identification number>,\n  password: <user password>\n};\n```\nThis scraper supports fetching transaction from up to one year.\n\n## Beinleumi & Massad\nThese scrapers are essentially identical and expect the following credentials object:\n```node\nconst credentials = {\n  username: <user name>,\n  password: <user password>\n};\n```\n\n## Bank Otsar Hahayal scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  username: <user name>,\n  password: <user password>\n};\n```\nThis scraper supports fetching transaction from up to one year.\n\n## Visa Cal scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  username: <user name>,\n  password: <user password>\n};\n```\nThis scraper supports fetching transaction from up to one year.\n\n## Max scraper (Formerly Leumi-Card)\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  username: <user name>,\n  password: <user password>\n};\n```\nThis scraper supports fetching transaction from up to one year.\n\n## Isracard scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  id: <user identification number>,\n  card6Digits: <6 last digits of card>\n  password: <user password>\n};\n```\nThis scraper supports fetching transaction from up to one year.\n\n## Amex scraper\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  username: <user identification number>,\n  card6Digits: <6 last digits of card>\n  password: <user password>\n};\n```\nThis scraper supports fetching transaction from up to one year.\n\n## Yahav\nThis scraper expects the following credentials object:\n```node\nconst credentials = {\n  username: <user name>,\n  password: <user password>,\n  nationalID: <user national ID>\n};\n```\nThis scraper supports fetching transaction from up to six months.\n\n## Beyhad Bishvilha\nThis scraper expects the following credentials object::\n```node\nconst credentials = {\n  id: <user identification number>,\n  password: <user password>\n};\n```\n\n# Known projects\nThese are the projects known to be using this module:\n- [Israeli YNAB updater](https://github.com/eshaham/israeli-ynab-updater) - A command line tool for exporting banks data to CSVs, formatted specifically for [YNAB](https://www.youneedabudget.com)\n- [Israel Finance Telegram Bot](https://github.com/GuyLewin/israel-finance-telegram-bot) - A simple telegram bot that sends notifications about new transactions and interacts with them\n- [Caspion](https://github.com/brafdlog/caspion) - An app for automatically sending transactions from Israeli banks and credit cards to budget tracking apps\n- [Finance Notifier](https://github.com/LiranBri/finance-notifier) - A simple script with the ability to send custom financial alerts to multiple contacts and platforms\n- [Moneyman](https://github.com/daniel-hauser/moneyman) - Automatically save transactions from all major Israeli banks and credit card companies, using GitHub actions (or a self hosted docker image)\n- [Firefly iii Importer](https://github.com/itairaz1/israeli-bank-firefly-importer) - A tool to import your banks data into [Firefly iii](https://www.firefly-iii.org/), a free and open source financial manager.\n\nBuilt something interesting you want to share here? [Let me know](https://goo.gl/forms/5Fb9JAjvzMIpmzqo2).\n\n# License\nThe MIT License\n",
+    "updated_at": "2025-03-30T16:05:53Z"
+  },
+  {
+    "name": "k8s",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/k8s",
+    "stars": 0,
+    "language": "Shell",
+    "languages": [
+      "Shell"
+    ],
+    "topics": [],
+    "readme": null,
+    "updated_at": "2025-03-30T06:25:09Z"
+  },
+  {
+    "name": "Numbers",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Numbers",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "CSS",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\\\nAnd deployed to Vercel [Numbers App](https://ea-numbers.vercel.app/).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in the browser.\n\nThe page will reload if you make edits.\\\nYou will also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can’t go back!**\n\nIf you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.\n\nYou don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n",
+    "updated_at": "2025-03-23T17:29:02Z"
+  },
+  {
+    "name": "numbers-micro",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/numbers-micro",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": null,
+    "updated_at": "2025-03-21T14:16:17Z"
+  },
+  {
+    "name": "numbers-micro2",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/numbers-micro2",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": null,
+    "updated_at": "2025-03-19T09:12:40Z"
+  },
+  {
+    "name": "Microservices",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Microservices",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "Pug",
+      "CSS",
+      "JavaScript"
+    ],
+    "topics": [],
+    "readme": null,
+    "updated_at": "2025-03-18T09:19:26Z"
+  },
+  {
+    "name": "Kubernetes",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Kubernetes",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "Pug",
+      "CSS",
+      "JavaScript"
+    ],
+    "topics": [],
+    "readme": null,
+    "updated_at": "2025-03-16T13:38:00Z"
+  }
+]
