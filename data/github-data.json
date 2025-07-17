@@ -11,8 +11,8 @@
       "JavaScript"
     ],
     "topics": [],
-    "readme": "# Recruiter AI 🤖\n\nAn AI-powered recruiting assistant that helps HR professionals interact with developer profiles through natural conversation.\n\n## Overview\n\nRecruiter AI serves as a digital representative for developers, allowing recruiters to:\n- Ask questions about technical skills and experience\n- Get detailed information about GitHub projects\n- Learn about work history and technical capabilities\n- Obtain contact information easily\n\n## Tech Stack\n\n- **Frontend**: Next.js 13, React\n- **Styling**: Tailwind CSS\n- **AI Integration**: Claude AI\n- **State Management**: React Context\n- **Type Safety**: TypeScript\n- **Deployment**: Vercel\n\n## Features\n\n- 💬 Natural language conversations\n- 🔍 Deep understanding of developer profiles\n- 📊 Dynamic response generation\n- 🎯 Recruitment-focused interactions\n- 📱 Responsive design\n\n## Getting Started\n\n1. Clone the repository:\n```bash\ngit clone https://github.com/EreZAzariyA/recruiter-ai.git\n```\n\n2. Install dependencies:\n```bash\nnpm install\n```\n\n3. Set up environment variables:\n```bash\ncp .env.example .env.local\n```\n\n4. Run the development server:\n```bash\nnpm run dev\n```\n\n## Contributing\n\nContributions are welcome! Please feel free to submit a Pull Request.\n\n\n## Contact\n\nIf you have any questions or suggestions, feel free to reach out:\n- Email: erezazariya@gmail.com\n- LinkedIn: https://linkedin.com/in/erezazariya",
-    "updated_at": "2025-07-17T12:44:00Z"
+    "readme": "# Recruiter AI 🤖\n\nAn AI-powered recruiting assistant that helps HR professionals interact with developer profiles through natural conversation.\n\nCheck out the [Live Demo](https://recruiter-ai-by-erez.vercel.app/)!\n\n## Overview\n\nRecruiter AI serves as a digital representative for developers, allowing recruiters to:\n- Ask questions about technical skills and experience\n- Get detailed information about GitHub projects\n- Learn about work history and technical capabilities\n- Obtain contact information easily\n\n## Tech Stack\n\n- **Frontend**: Next.js 13, React\n- **Styling**: Tailwind CSS\n- **AI Integration**: Claude AI\n- **State Management**: React Context\n- **Type Safety**: TypeScript\n- **Deployment**: Vercel\n\n## Features\n\n- 💬 Natural language conversations\n- 🔍 Deep understanding of developer profiles\n- 📊 Dynamic response generation\n- 🎯 Recruitment-focused interactions\n- 📱 Responsive design\n\n## Getting Started\n\n1. Clone the repository:\n```bash\ngit clone https://github.com/EreZAzariyA/recruiter-ai.git\n```\n\n2. Install dependencies:\n```bash\nnpm install\n```\n\n3. Set up environment variables:\n```bash\ncp .env.example .env.local\n```\n\n4. Run the development server:\n```bash\nnpm run dev\n```\n\n## Contributing\n\nContributions are welcome! Please feel free to submit a Pull Request.\n\n\n## Contact\n\nIf you have any questions or suggestions, feel free to reach out:\n- Email: erezazariya@gmail.com\n- LinkedIn: https://linkedin.com/in/erezazariya\n",
+    "updated_at": "2025-07-17T14:22:19Z"
   },
   {
     "name": "crypto-wallet",
@@ -147,5 +147,171 @@
     "topics": [],
     "readme": null,
     "updated_at": "2025-03-16T13:38:00Z"
+  },
+  {
+    "name": "NodeJS_Microservices",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/NodeJS_Microservices",
+    "stars": 0,
+    "language": null,
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "readme": "# NodeJS_Microservices\n",
+    "updated_at": "2025-03-14T10:07:58Z"
+  },
+  {
+    "name": "E.A-Store",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/E.A-Store",
+    "stars": 0,
+    "language": "JavaScript",
+    "languages": [
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "Dockerfile"
+    ],
+    "topics": [],
+    "readme": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\\\nAnd deployed to Vercel [E.A-Store App](https://e-a-store.vercel.app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in your browser.\n\nThe page will reload when you make changes.\\\nYou may also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\n\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\n\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n\n### Code Splitting\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)\n\n### Analyzing the Bundle Size\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)\n\n### Making a Progressive Web App\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)\n\n### Advanced Configuration\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)\n\n### Deployment\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)\n\n### `npm run build` fails to minify\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\n",
+    "updated_at": "2024-10-25T09:47:43Z"
+  },
+  {
+    "name": "Phone_Store-Frontend",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Phone_Store-Frontend",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "readme": "<div align=\"center\">\n \n# Phone Store - Online Web. (Frontend)\n###  ***Project Uploaded To AWS-Amplify: [Visit-Store](https://master.d3eqhxr7e40pa9.amplifyapp.com/)***\n\n### Built With\n [![Typescript][Typescript.com]][Typescript-url]\n [![React][React.js]][React-url]\n [![Reudx][Redux.com]][Redux-url]\n [![Bootstrap][Bootstrap.com]][Bootstrap-url]\n\n### Usage\n\n<table border=\"0\">\n <tr>\n    <td><b style=\"font-size:30px\">Admin</b></td>\n    <td><b style=\"font-size:30px\">User</b></td>\n </tr>\n \n <tr>\n    <td> Login </td>\n    <td> Register & Login </td>\n </tr>\n <tr>\n    <td> Add New Product or Brand To Store </td>\n    <td> Add Product To Shopping-Cart </td>\n </tr>\n <tr>\n    <td> Update Product or Brand Details </td>\n    <td> Update Stock To Order </td>\n </tr>\n <tr>\n    <td> Remove Product or Brand From Store </td>\n    <td> Remove Product From Shopping-Cart </td>\n </tr>\n <tr>\n    <td> Confirm An Order </td>\n    <td> Make A New Order </td>\n </tr>\n <tr>\n  <td> Edit Top-Products/Brands Area </td>\n  <td> </td>\n </tr>\n</table>\n\n# ENJOY!\n<div/>\n\n\n[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB\n[React-url]: https://reactjs.org/\n\n[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-20232A?style=for-the-badge&logo=bootstrap&logoColor=61DAFB\n[Bootstrap-url]: https://getbootstrap.com\n\n\n[Redux.com]: https://img.shields.io/badge/Redux-20232A?style=for-the-badge&logo=redux&logoColor=61DAFB\n[Redux-url]: https://redux.js.org/\n\n\n[Typescript.com]: https://img.shields.io/badge/Typescript-20232A?style=for-the-badge&logo=typescript&logoColor=61DAFB\n[Typescript-url]: https://www.typescriptlang.org/\n  \n",
+    "updated_at": "2024-05-03T12:56:34Z"
+  },
+  {
+    "name": "Tic-Tac-Toe-Game",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Tic-Tac-Toe-Game",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "CSS",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": "<div align=\"center\">\n \n# Tic-Tac-Toe Game. \n### ***Project uploaded to AWS Amplify*** <br/>\n### ***[Play-Game](https://tic-tac-toe-game-snowy-six.vercel.app/)***\n\n### Built With\n [![Typescript][Typescript.com]][Typescript-url]\n [![React][React.js]][React-url]\n\n***Project wairted fully by TypeScript language <br/>\nAND <br/>\nCreated with [Create React App](https://github.com/facebook/create-react-app).*** <br/>\n<div/>\n\n[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB\n[React-url]: https://reactjs.org/\n\n[Typescript.com]: https://img.shields.io/badge/Typescript-20232A?style=for-the-badge&logo=typescript&logoColor=61DAFB\n[Typescript-url]: https://www.typescriptlang.org/\n",
+    "updated_at": "2024-02-22T19:33:07Z"
+  },
+  {
+    "name": "Snake-Game",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Snake-Game",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "CSS",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": "<div align=\"center\">\n \n# Snake-Game. \n### ***Project uploaded to AWS Amplify***\n### ***[Play-Game](https://snake-game-one-ruddy.vercel.app/)***\n\n### Built With\n [![React][React.js]][React-url]\n\n***Project wairted fully by TypeScript language <br/>\nAND <br/>\nCreated with [Create React App](https://github.com/facebook/create-react-app).*** <br/>\n<div/>\n\n[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB\n[React-url]: https://reactjs.org/\n",
+    "updated_at": "2024-02-22T19:32:27Z"
+  },
+  {
+    "name": "EA-Store",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/EA-Store",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "CSS",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in the browser.\n\nThe page will reload if you make edits.\\\nYou will also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can’t go back!**\n\nIf you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.\n\nYou don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n",
+    "updated_at": "2023-06-09T21:22:31Z"
+  },
+  {
+    "name": "Cryptos",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Cryptos",
+    "stars": 0,
+    "language": "JavaScript",
+    "languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in your browser.\n\nThe page will reload when you make changes.\\\nYou may also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\n\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\n\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n\n### Code Splitting\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)\n\n### Analyzing the Bundle Size\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)\n\n### Making a Progressive Web App\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)\n\n### Advanced Configuration\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)\n\n### Deployment\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)\n\n### `npm run build` fails to minify\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\n",
+    "updated_at": "2023-05-19T10:42:10Z"
+  },
+  {
+    "name": "Social-Front",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Social-Front",
+    "stars": 0,
+    "language": "JavaScript",
+    "languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "topics": [],
+    "readme": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in your browser.\n\nThe page will reload when you make changes.\\\nYou may also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\n\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\n\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n\n### Code Splitting\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)\n\n### Analyzing the Bundle Size\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)\n\n### Making a Progressive Web App\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)\n\n### Advanced Configuration\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)\n\n### Deployment\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)\n\n### `npm run build` fails to minify\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\n",
+    "updated_at": "2023-03-13T16:41:07Z"
+  },
+  {
+    "name": "Shofersal-Online",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Shofersal-Online",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "topics": [],
+    "readme": null,
+    "updated_at": "2022-11-23T00:35:18Z"
+  },
+  {
+    "name": "Family-Tasks",
+    "description": null,
+    "url": "https://github.com/EreZAzariyA/Family-Tasks",
+    "stars": 0,
+    "language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "readme": "<div align=\"center\">\n \n# Family Tasks - Online Web \n***Project uploaded to AWS Amplify: [Family-Tasks](https://main.d37w3tomn9m7ta.amplifyapp.com)***\n\n### Built With\n [![React][React.js]][React-url]\n [![Bootstrap][Bootstrap.com]][Bootstrap-url]\n[![Mobx][Mobx.js]][Mobx-url]\n\n### Usage\n* Add house member\n* Add new task\n* Edit/Delete tasks\n\n***Project wairted fully by TypeScript language <br/>\nAND <br/>\nCreated with [Create React App](https://github.com/facebook/create-react-app). <br/>\nThe project was designed by React-Bootstrap. <br/>\nGlobal state controlled by Mobx.***\n<div/>\n\n\n[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB\n[React-url]: https://reactjs.org/\n\n[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white\n[Bootstrap-url]: https://getbootstrap.com\n\n[Mobx.js]: https://img.shields.io/badge/Mobx-20232A?style=for-the-badge&logo=mobx&logoColor=61DAFB\n[Mobx-url]: https://mobx.js.org/\n",
+    "updated_at": "2022-11-13T02:01:21Z"
+  },
+  {
+    "name": "EreZAzariyA",
+    "description": "Config files for my GitHub profile.",
+    "url": "https://github.com/EreZAzariyA/EreZAzariyA",
+    "stars": 0,
+    "language": null,
+    "languages": [],
+    "topics": [
+      "config",
+      "github-config"
+    ],
+    "readme": "- 👋 Hi, I’m @EreZAzariyA\n- 👀 I’m interested in Node.js and React\n- 🌱 I’m currently learning build full-stack systems.\n- 📫 How to reach me on Email:\"erezazariya@gmail.com\", Linkedin:\"Erez Azariya\"\n\n<!---\nEreZAzariyA/EreZAzariyA is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.\nYou can click the Preview link to take a look at your changes.\n--->\n",
+    "updated_at": "2022-04-02T16:12:30Z"
   }
 ]
